@@ -17,6 +17,8 @@ final class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        models.append(StoriesData(text: "Add Story",
+                                  imageName: "zverik"))
         models.append(StoriesData(text: "usmankhamys",
                                   imageName: "usman"))
         models.append(StoriesData(text: "durov",
@@ -43,7 +45,7 @@ extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        250.0
+        100
     }
 }
 
